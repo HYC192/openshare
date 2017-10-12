@@ -40,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0492D1D21F8F6FA40009ADF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0492D1D41F8F70720009ADF7 /* NNBaseShareKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NNBaseShareKit.h; path = ../openshare/NNBaseShareKit.h; sourceTree = "<group>"; };
 		0492D1D51F8F70720009ADF7 /* NNBaseShareKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NNBaseShareKit.m; path = ../openshare/NNBaseShareKit.m; sourceTree = "<group>"; };
 		049EE8F51F8F6443004A076B /* NNShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNShareViewController.h; sourceTree = "<group>"; };
@@ -97,21 +96,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0492D1D11F8F6FA40009ADF7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0492D1D21F8F6FA40009ADF7 /* UIKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B66BF3A41B0C137D0082F8D6 = {
 			isa = PBXGroup;
 			children = (
 				B66BF3AF1B0C137E0082F8D6 /* openshare */,
 				B66BF3C91B0C137E0082F8D6 /* openshareTests */,
 				B66BF3AE1B0C137E0082F8D6 /* Products */,
-				0492D1D11F8F6FA40009ADF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
