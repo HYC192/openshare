@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0492D23F1F8F883A0009ADF7 /* NNBaseShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D23E1F8F883A0009ADF7 /* NNBaseShareKit.m */; };
-		0492D2581F8F89780009ADF7 /* NNWeiboShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2461F8F89750009ADF7 /* NNWeiboShare.m */; };
-		0492D2591F8F89780009ADF7 /* NSString+NNValid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2471F8F89750009ADF7 /* NSString+NNValid.m */; };
-		0492D25A1F8F89780009ADF7 /* NNChatShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2491F8F89750009ADF7 /* NNChatShare.m */; };
-		0492D25B1F8F89780009ADF7 /* NNWechatTimelineShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D24B1F8F89760009ADF7 /* NNWechatTimelineShare.m */; };
-		0492D25C1F8F89780009ADF7 /* NNShareMessageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D24D1F8F89760009ADF7 /* NNShareMessageObject.m */; };
-		0492D25D1F8F89780009ADF7 /* NSBundle+NNShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D24E1F8F89760009ADF7 /* NSBundle+NNShareKit.m */; };
-		0492D25E1F8F89780009ADF7 /* NNCopyLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D24F1F8F89770009ADF7 /* NNCopyLink.m */; };
-		0492D25F1F8F89780009ADF7 /* NNSavePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2511F8F89770009ADF7 /* NNSavePhoto.m */; };
-		0492D2601F8F89780009ADF7 /* NNWechatSessionShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2521F8F89770009ADF7 /* NNWechatSessionShare.m */; };
-		0492D2611F8F89780009ADF7 /* NNShareContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2531F8F89770009ADF7 /* NNShareContentController.m */; };
-		0492D2671F8F8A650009ADF7 /* NNBaseMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2661F8F8A650009ADF7 /* NNBaseMessages.m */; };
-		0492D26C1F8F8C390009ADF7 /* NNShareKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0492D26B1F8F8C380009ADF7 /* NNShareKit.bundle */; };
+		0492D2871F8F8E590009ADF7 /* NNWechatTimelineShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D26E1F8F8E540009ADF7 /* NNWechatTimelineShare.m */; };
+		0492D2881F8F8E590009ADF7 /* NSString+NNValid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2711F8F8E550009ADF7 /* NSString+NNValid.m */; };
+		0492D2891F8F8E590009ADF7 /* NNSavePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2761F8F8E550009ADF7 /* NNSavePhoto.m */; };
+		0492D28A1F8F8E590009ADF7 /* NNWechatSessionShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2771F8F8E560009ADF7 /* NNWechatSessionShare.m */; };
+		0492D28B1F8F8E590009ADF7 /* NSBundle+NNShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2781F8F8E560009ADF7 /* NSBundle+NNShareKit.m */; };
+		0492D28C1F8F8E590009ADF7 /* NNShareContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D27B1F8F8E560009ADF7 /* NNShareContentController.m */; };
+		0492D28D1F8F8E590009ADF7 /* NNBaseShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D27C1F8F8E560009ADF7 /* NNBaseShareKit.m */; };
+		0492D28E1F8F8E590009ADF7 /* NNCopyLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D27D1F8F8E570009ADF7 /* NNCopyLink.m */; };
+		0492D28F1F8F8E590009ADF7 /* NNChatShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2821F8F8E580009ADF7 /* NNChatShare.m */; };
+		0492D2901F8F8E590009ADF7 /* NNShareMessageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2831F8F8E580009ADF7 /* NNShareMessageObject.m */; };
+		0492D2911F8F8E590009ADF7 /* NNWeiboShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2841F8F8E580009ADF7 /* NNWeiboShare.m */; };
+		0492D2921F8F8E590009ADF7 /* NNBaseMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2851F8F8E580009ADF7 /* NNBaseMessages.m */; };
+		0492D2931F8F8E590009ADF7 /* NNShareKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0492D2861F8F8E590009ADF7 /* NNShareKit.bundle */; };
 		049EE8F71F8F6443004A076B /* NNShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049EE8F61F8F6443004A076B /* NNShareViewController.m */; };
 		B66BF3B31B0C137E0082F8D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B66BF3B21B0C137E0082F8D6 /* main.m */; };
 		B66BF3B61B0C137E0082F8D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B66BF3B51B0C137E0082F8D6 /* AppDelegate.m */; };
@@ -52,32 +52,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0492D23D1F8F883A0009ADF7 /* NNBaseShareKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NNBaseShareKit.h; path = ../../openshare/NNShareKit/NNBaseShareKit.h; sourceTree = "<group>"; };
-		0492D23E1F8F883A0009ADF7 /* NNBaseShareKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NNBaseShareKit.m; path = ../../openshare/NNShareKit/NNBaseShareKit.m; sourceTree = "<group>"; };
-		0492D2421F8F89740009ADF7 /* NNCopyLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNCopyLink.h; path = ../../openshare/NNShareKit/NNCopyLink.h; sourceTree = "<group>"; };
-		0492D2431F8F89750009ADF7 /* NNShareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNShareKit.h; path = ../../openshare/NNShareKit/NNShareKit.h; sourceTree = "<group>"; };
-		0492D2441F8F89750009ADF7 /* NNWechatSessionShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNWechatSessionShare.h; path = ../../openshare/NNShareKit/NNWechatSessionShare.h; sourceTree = "<group>"; };
-		0492D2451F8F89750009ADF7 /* NNWechatTimelineShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNWechatTimelineShare.h; path = ../../openshare/NNShareKit/NNWechatTimelineShare.h; sourceTree = "<group>"; };
-		0492D2461F8F89750009ADF7 /* NNWeiboShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNWeiboShare.m; path = ../../openshare/NNShareKit/NNWeiboShare.m; sourceTree = "<group>"; };
-		0492D2471F8F89750009ADF7 /* NSString+NNValid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NNValid.m"; path = "../../openshare/NNShareKit/NSString+NNValid.m"; sourceTree = "<group>"; };
-		0492D2481F8F89750009ADF7 /* NNShareContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNShareContentController.h; path = ../../openshare/NNShareKit/NNShareContentController.h; sourceTree = "<group>"; };
-		0492D2491F8F89750009ADF7 /* NNChatShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNChatShare.m; path = ../../openshare/NNShareKit/NNChatShare.m; sourceTree = "<group>"; };
-		0492D24A1F8F89760009ADF7 /* NNSavePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNSavePhoto.h; path = ../../openshare/NNShareKit/NNSavePhoto.h; sourceTree = "<group>"; };
-		0492D24B1F8F89760009ADF7 /* NNWechatTimelineShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNWechatTimelineShare.m; path = ../../openshare/NNShareKit/NNWechatTimelineShare.m; sourceTree = "<group>"; };
-		0492D24C1F8F89760009ADF7 /* NSString+NNValid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NNValid.h"; path = "../../openshare/NNShareKit/NSString+NNValid.h"; sourceTree = "<group>"; };
-		0492D24D1F8F89760009ADF7 /* NNShareMessageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNShareMessageObject.m; path = ../../openshare/NNShareKit/NNShareMessageObject.m; sourceTree = "<group>"; };
-		0492D24E1F8F89760009ADF7 /* NSBundle+NNShareKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+NNShareKit.m"; path = "../../openshare/NNShareKit/NSBundle+NNShareKit.m"; sourceTree = "<group>"; };
-		0492D24F1F8F89770009ADF7 /* NNCopyLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNCopyLink.m; path = ../../openshare/NNShareKit/NNCopyLink.m; sourceTree = "<group>"; };
-		0492D2501F8F89770009ADF7 /* NNShareMessageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNShareMessageObject.h; path = ../../openshare/NNShareKit/NNShareMessageObject.h; sourceTree = "<group>"; };
-		0492D2511F8F89770009ADF7 /* NNSavePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNSavePhoto.m; path = ../../openshare/NNShareKit/NNSavePhoto.m; sourceTree = "<group>"; };
-		0492D2521F8F89770009ADF7 /* NNWechatSessionShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNWechatSessionShare.m; path = ../../openshare/NNShareKit/NNWechatSessionShare.m; sourceTree = "<group>"; };
-		0492D2531F8F89770009ADF7 /* NNShareContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNShareContentController.m; path = ../../openshare/NNShareKit/NNShareContentController.m; sourceTree = "<group>"; };
-		0492D2541F8F89780009ADF7 /* NNChatShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNChatShare.h; path = ../../openshare/NNShareKit/NNChatShare.h; sourceTree = "<group>"; };
-		0492D2551F8F89780009ADF7 /* NNWeiboShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNWeiboShare.h; path = ../../openshare/NNShareKit/NNWeiboShare.h; sourceTree = "<group>"; };
-		0492D2561F8F89780009ADF7 /* NSBundle+NNShareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+NNShareKit.h"; path = "../../openshare/NNShareKit/NSBundle+NNShareKit.h"; sourceTree = "<group>"; };
-		0492D2651F8F8A650009ADF7 /* NNBaseMessages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NNBaseMessages.h; path = ../../openshare/NNShareKit/NNBaseMessages.h; sourceTree = "<group>"; };
-		0492D2661F8F8A650009ADF7 /* NNBaseMessages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NNBaseMessages.m; path = ../../openshare/NNShareKit/NNBaseMessages.m; sourceTree = "<group>"; };
-		0492D26B1F8F8C380009ADF7 /* NNShareKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NNShareKit.bundle; path = ../../openshare/NNShareKit/NNShareKit.bundle; sourceTree = "<group>"; };
+		0492D26D1F8F8E540009ADF7 /* NNBaseMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNBaseMessages.h; path = ../openshare/NNBaseMessages.h; sourceTree = "<group>"; };
+		0492D26E1F8F8E540009ADF7 /* NNWechatTimelineShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNWechatTimelineShare.m; path = ../openshare/NNWechatTimelineShare.m; sourceTree = "<group>"; };
+		0492D26F1F8F8E540009ADF7 /* NNWechatSessionShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNWechatSessionShare.h; path = ../openshare/NNWechatSessionShare.h; sourceTree = "<group>"; };
+		0492D2701F8F8E550009ADF7 /* NNShareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNShareKit.h; path = ../openshare/NNShareKit.h; sourceTree = "<group>"; };
+		0492D2711F8F8E550009ADF7 /* NSString+NNValid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NNValid.m"; path = "../openshare/NSString+NNValid.m"; sourceTree = "<group>"; };
+		0492D2721F8F8E550009ADF7 /* NNShareContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNShareContentController.h; path = ../openshare/NNShareContentController.h; sourceTree = "<group>"; };
+		0492D2731F8F8E550009ADF7 /* NNShareMessageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNShareMessageObject.h; path = ../openshare/NNShareMessageObject.h; sourceTree = "<group>"; };
+		0492D2741F8F8E550009ADF7 /* NNBaseShareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNBaseShareKit.h; path = ../openshare/NNBaseShareKit.h; sourceTree = "<group>"; };
+		0492D2751F8F8E550009ADF7 /* NNChatShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNChatShare.h; path = ../openshare/NNChatShare.h; sourceTree = "<group>"; };
+		0492D2761F8F8E550009ADF7 /* NNSavePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNSavePhoto.m; path = ../openshare/NNSavePhoto.m; sourceTree = "<group>"; };
+		0492D2771F8F8E560009ADF7 /* NNWechatSessionShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNWechatSessionShare.m; path = ../openshare/NNWechatSessionShare.m; sourceTree = "<group>"; };
+		0492D2781F8F8E560009ADF7 /* NSBundle+NNShareKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+NNShareKit.m"; path = "../openshare/NSBundle+NNShareKit.m"; sourceTree = "<group>"; };
+		0492D2791F8F8E560009ADF7 /* NNCopyLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNCopyLink.h; path = ../openshare/NNCopyLink.h; sourceTree = "<group>"; };
+		0492D27A1F8F8E560009ADF7 /* NSString+NNValid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NNValid.h"; path = "../openshare/NSString+NNValid.h"; sourceTree = "<group>"; };
+		0492D27B1F8F8E560009ADF7 /* NNShareContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNShareContentController.m; path = ../openshare/NNShareContentController.m; sourceTree = "<group>"; };
+		0492D27C1F8F8E560009ADF7 /* NNBaseShareKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNBaseShareKit.m; path = ../openshare/NNBaseShareKit.m; sourceTree = "<group>"; };
+		0492D27D1F8F8E570009ADF7 /* NNCopyLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNCopyLink.m; path = ../openshare/NNCopyLink.m; sourceTree = "<group>"; };
+		0492D27E1F8F8E570009ADF7 /* NNSavePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNSavePhoto.h; path = ../openshare/NNSavePhoto.h; sourceTree = "<group>"; };
+		0492D27F1F8F8E570009ADF7 /* NNWechatTimelineShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNWechatTimelineShare.h; path = ../openshare/NNWechatTimelineShare.h; sourceTree = "<group>"; };
+		0492D2801F8F8E570009ADF7 /* NNWeiboShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNWeiboShare.h; path = ../openshare/NNWeiboShare.h; sourceTree = "<group>"; };
+		0492D2811F8F8E580009ADF7 /* NSBundle+NNShareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+NNShareKit.h"; path = "../openshare/NSBundle+NNShareKit.h"; sourceTree = "<group>"; };
+		0492D2821F8F8E580009ADF7 /* NNChatShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNChatShare.m; path = ../openshare/NNChatShare.m; sourceTree = "<group>"; };
+		0492D2831F8F8E580009ADF7 /* NNShareMessageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNShareMessageObject.m; path = ../openshare/NNShareMessageObject.m; sourceTree = "<group>"; };
+		0492D2841F8F8E580009ADF7 /* NNWeiboShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNWeiboShare.m; path = ../openshare/NNWeiboShare.m; sourceTree = "<group>"; };
+		0492D2851F8F8E580009ADF7 /* NNBaseMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNBaseMessages.m; path = ../openshare/NNBaseMessages.m; sourceTree = "<group>"; };
+		0492D2861F8F8E590009ADF7 /* NNShareKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NNShareKit.bundle; path = ../openshare/NNShareKit.bundle; sourceTree = "<group>"; };
 		049EE8F51F8F6443004A076B /* NNShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNShareViewController.h; sourceTree = "<group>"; };
 		049EE8F61F8F6443004A076B /* NNShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNShareViewController.m; sourceTree = "<group>"; };
 		B66BF3AD1B0C137E0082F8D6 /* openshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,39 +132,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0492D23C1F8F88060009ADF7 /* NNShareKit */ = {
-			isa = PBXGroup;
-			children = (
-				0492D26B1F8F8C380009ADF7 /* NNShareKit.bundle */,
-				0492D23D1F8F883A0009ADF7 /* NNBaseShareKit.h */,
-				0492D23E1F8F883A0009ADF7 /* NNBaseShareKit.m */,
-				0492D2651F8F8A650009ADF7 /* NNBaseMessages.h */,
-				0492D2661F8F8A650009ADF7 /* NNBaseMessages.m */,
-				0492D2541F8F89780009ADF7 /* NNChatShare.h */,
-				0492D2491F8F89750009ADF7 /* NNChatShare.m */,
-				0492D2421F8F89740009ADF7 /* NNCopyLink.h */,
-				0492D24F1F8F89770009ADF7 /* NNCopyLink.m */,
-				0492D24A1F8F89760009ADF7 /* NNSavePhoto.h */,
-				0492D2511F8F89770009ADF7 /* NNSavePhoto.m */,
-				0492D2481F8F89750009ADF7 /* NNShareContentController.h */,
-				0492D2531F8F89770009ADF7 /* NNShareContentController.m */,
-				0492D2431F8F89750009ADF7 /* NNShareKit.h */,
-				0492D2501F8F89770009ADF7 /* NNShareMessageObject.h */,
-				0492D24D1F8F89760009ADF7 /* NNShareMessageObject.m */,
-				0492D2441F8F89750009ADF7 /* NNWechatSessionShare.h */,
-				0492D2521F8F89770009ADF7 /* NNWechatSessionShare.m */,
-				0492D2451F8F89750009ADF7 /* NNWechatTimelineShare.h */,
-				0492D24B1F8F89760009ADF7 /* NNWechatTimelineShare.m */,
-				0492D2551F8F89780009ADF7 /* NNWeiboShare.h */,
-				0492D2461F8F89750009ADF7 /* NNWeiboShare.m */,
-				0492D2561F8F89780009ADF7 /* NSBundle+NNShareKit.h */,
-				0492D24E1F8F89760009ADF7 /* NSBundle+NNShareKit.m */,
-				0492D24C1F8F89760009ADF7 /* NSString+NNValid.h */,
-				0492D2471F8F89750009ADF7 /* NSString+NNValid.m */,
-			);
-			path = NNShareKit;
-			sourceTree = "<group>";
-		};
 		B66BF3A41B0C137D0082F8D6 = {
 			isa = PBXGroup;
 			children = (
@@ -244,7 +211,32 @@
 		B66BF3E11B0C16290082F8D6 /* OpenShare */ = {
 			isa = PBXGroup;
 			children = (
-				0492D23C1F8F88060009ADF7 /* NNShareKit */,
+				0492D26D1F8F8E540009ADF7 /* NNBaseMessages.h */,
+				0492D2851F8F8E580009ADF7 /* NNBaseMessages.m */,
+				0492D2741F8F8E550009ADF7 /* NNBaseShareKit.h */,
+				0492D27C1F8F8E560009ADF7 /* NNBaseShareKit.m */,
+				0492D2751F8F8E550009ADF7 /* NNChatShare.h */,
+				0492D2821F8F8E580009ADF7 /* NNChatShare.m */,
+				0492D2791F8F8E560009ADF7 /* NNCopyLink.h */,
+				0492D27D1F8F8E570009ADF7 /* NNCopyLink.m */,
+				0492D27E1F8F8E570009ADF7 /* NNSavePhoto.h */,
+				0492D2761F8F8E550009ADF7 /* NNSavePhoto.m */,
+				0492D2721F8F8E550009ADF7 /* NNShareContentController.h */,
+				0492D27B1F8F8E560009ADF7 /* NNShareContentController.m */,
+				0492D2861F8F8E590009ADF7 /* NNShareKit.bundle */,
+				0492D2701F8F8E550009ADF7 /* NNShareKit.h */,
+				0492D2731F8F8E550009ADF7 /* NNShareMessageObject.h */,
+				0492D2831F8F8E580009ADF7 /* NNShareMessageObject.m */,
+				0492D26F1F8F8E540009ADF7 /* NNWechatSessionShare.h */,
+				0492D2771F8F8E560009ADF7 /* NNWechatSessionShare.m */,
+				0492D27F1F8F8E570009ADF7 /* NNWechatTimelineShare.h */,
+				0492D26E1F8F8E540009ADF7 /* NNWechatTimelineShare.m */,
+				0492D2801F8F8E570009ADF7 /* NNWeiboShare.h */,
+				0492D2841F8F8E580009ADF7 /* NNWeiboShare.m */,
+				0492D2811F8F8E580009ADF7 /* NSBundle+NNShareKit.h */,
+				0492D2781F8F8E560009ADF7 /* NSBundle+NNShareKit.m */,
+				0492D27A1F8F8E560009ADF7 /* NSString+NNValid.h */,
+				0492D2711F8F8E550009ADF7 /* NSString+NNValid.m */,
 				B66BF3E21B0C16290082F8D6 /* OpenShare+QQ.h */,
 				B66BF3E31B0C16290082F8D6 /* OpenShare+QQ.m */,
 				B66BF3E41B0C16290082F8D6 /* OpenShare+Renren.h */,
@@ -345,7 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0492D26C1F8F8C390009ADF7 /* NNShareKit.bundle in Resources */,
+				0492D2931F8F8E590009ADF7 /* NNShareKit.bundle in Resources */,
 				B66BF3DB1B0C14480082F8D6 /* iconfont.ttf in Resources */,
 				B66BF3DD1B0C14480082F8D6 /* logo.png in Resources */,
 				B66BF3DC1B0C14480082F8D6 /* logo.gif in Resources */,
@@ -370,28 +362,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0492D2881F8F8E590009ADF7 /* NSString+NNValid.m in Sources */,
+				0492D28D1F8F8E590009ADF7 /* NNBaseShareKit.m in Sources */,
+				0492D2911F8F8E590009ADF7 /* NNWeiboShare.m in Sources */,
 				049EE8F71F8F6443004A076B /* NNShareViewController.m in Sources */,
-				0492D23F1F8F883A0009ADF7 /* NNBaseShareKit.m in Sources */,
+				0492D28F1F8F8E590009ADF7 /* NNChatShare.m in Sources */,
 				B66BF3B91B0C137E0082F8D6 /* ViewController.m in Sources */,
 				B66BF3EE1B0C16290082F8D6 /* OpenShare+Renren.m in Sources */,
 				B66BF3B61B0C137E0082F8D6 /* AppDelegate.m in Sources */,
+				0492D28C1F8F8E590009ADF7 /* NNShareContentController.m in Sources */,
+				0492D2891F8F8E590009ADF7 /* NNSavePhoto.m in Sources */,
+				0492D2871F8F8E590009ADF7 /* NNWechatTimelineShare.m in Sources */,
 				B66BF3F41B0C1AEB0082F8D6 /* UIControl+Blocks.m in Sources */,
-				0492D25A1F8F89780009ADF7 /* NNChatShare.m in Sources */,
-				0492D25E1F8F89780009ADF7 /* NNCopyLink.m in Sources */,
-				0492D2591F8F89780009ADF7 /* NSString+NNValid.m in Sources */,
-				0492D2601F8F89780009ADF7 /* NNWechatSessionShare.m in Sources */,
+				0492D28A1F8F8E590009ADF7 /* NNWechatSessionShare.m in Sources */,
 				B66BF3F11B0C16290082F8D6 /* OpenShare.m in Sources */,
+				0492D2921F8F8E590009ADF7 /* NNBaseMessages.m in Sources */,
+				0492D2901F8F8E590009ADF7 /* NNShareMessageObject.m in Sources */,
 				B66BF3B31B0C137E0082F8D6 /* main.m in Sources */,
-				0492D25F1F8F89780009ADF7 /* NNSavePhoto.m in Sources */,
-				0492D25D1F8F89780009ADF7 /* NSBundle+NNShareKit.m in Sources */,
-				0492D2671F8F8A650009ADF7 /* NNBaseMessages.m in Sources */,
 				B66BF3EF1B0C16290082F8D6 /* OpenShare+Weibo.m in Sources */,
-				0492D2611F8F89780009ADF7 /* NNShareContentController.m in Sources */,
-				0492D2581F8F89780009ADF7 /* NNWeiboShare.m in Sources */,
 				B6E22B1F1B213B09001930CA /* OpenShare+Alipay.m in Sources */,
+				0492D28E1F8F8E590009ADF7 /* NNCopyLink.m in Sources */,
+				0492D28B1F8F8E590009ADF7 /* NSBundle+NNShareKit.m in Sources */,
 				B66BF3ED1B0C16290082F8D6 /* OpenShare+QQ.m in Sources */,
-				0492D25B1F8F89780009ADF7 /* NNWechatTimelineShare.m in Sources */,
-				0492D25C1F8F89780009ADF7 /* NNShareMessageObject.m in Sources */,
 				B66BF3F01B0C16290082F8D6 /* OpenShare+Weixin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
