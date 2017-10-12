@@ -26,6 +26,7 @@
 		0492D2AA1F8F91BF0009ADF7 /* icon_share_wechatsession@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0492D2A21F8F91BF0009ADF7 /* icon_share_wechatsession@3x.png */; };
 		0492D2AB1F8F91BF0009ADF7 /* icon_share_weibo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0492D2A31F8F91BF0009ADF7 /* icon_share_weibo@2x.png */; };
 		0492D2AC1F8F91BF0009ADF7 /* icon_share_weibo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0492D2A41F8F91BF0009ADF7 /* icon_share_weibo@3x.png */; };
+		0492D2B21F8FA4A40009ADF7 /* NSString+NNImagePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2B11F8FA4A40009ADF7 /* NSString+NNImagePath.m */; };
 		049EE8F71F8F6443004A076B /* NNShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049EE8F61F8F6443004A076B /* NNShareViewController.m */; };
 		B66BF3B31B0C137E0082F8D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B66BF3B21B0C137E0082F8D6 /* main.m */; };
 		B66BF3B61B0C137E0082F8D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B66BF3B51B0C137E0082F8D6 /* AppDelegate.m */; };
@@ -89,6 +90,8 @@
 		0492D2A21F8F91BF0009ADF7 /* icon_share_wechatsession@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_share_wechatsession@3x.png"; sourceTree = "<group>"; };
 		0492D2A31F8F91BF0009ADF7 /* icon_share_weibo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_share_weibo@2x.png"; sourceTree = "<group>"; };
 		0492D2A41F8F91BF0009ADF7 /* icon_share_weibo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_share_weibo@3x.png"; sourceTree = "<group>"; };
+		0492D2B01F8FA4A40009ADF7 /* NSString+NNImagePath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+NNImagePath.h"; path = "../openshare/NSString+NNImagePath.h"; sourceTree = "<group>"; };
+		0492D2B11F8FA4A40009ADF7 /* NSString+NNImagePath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+NNImagePath.m"; path = "../openshare/NSString+NNImagePath.m"; sourceTree = "<group>"; };
 		049EE8F51F8F6443004A076B /* NNShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNShareViewController.h; sourceTree = "<group>"; };
 		049EE8F61F8F6443004A076B /* NNShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNShareViewController.m; sourceTree = "<group>"; };
 		B66BF3AD1B0C137E0082F8D6 /* openshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,6 +244,8 @@
 				0492D29C1F8F91BF0009ADF7 /* Resources */,
 				0492D26D1F8F8E540009ADF7 /* NNBaseMessages.h */,
 				0492D2851F8F8E580009ADF7 /* NNBaseMessages.m */,
+				0492D2B01F8FA4A40009ADF7 /* NSString+NNImagePath.h */,
+				0492D2B11F8FA4A40009ADF7 /* NSString+NNImagePath.m */,
 				0492D2741F8F8E550009ADF7 /* NNBaseShareKit.h */,
 				0492D27C1F8F8E560009ADF7 /* NNBaseShareKit.m */,
 				0492D2751F8F8E550009ADF7 /* NNChatShare.h */,
@@ -394,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0492D2B21F8FA4A40009ADF7 /* NSString+NNImagePath.m in Sources */,
 				0492D2881F8F8E590009ADF7 /* NSString+NNValid.m in Sources */,
 				0492D28D1F8F8E590009ADF7 /* NNBaseShareKit.m in Sources */,
 				0492D2911F8F8E590009ADF7 /* NNWeiboShare.m in Sources */,
