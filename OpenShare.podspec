@@ -108,7 +108,7 @@ Pod::Spec.new do |s|
   # s.resource  = "Resources/*.png"
   # s.resources = "Resources/*.png"
   s.resource_bundles = {
-    'OpenShare' => [ 'Resources/*.png']
+    'openshare' => [ 'openshare/Resources/*.png']
   }
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
