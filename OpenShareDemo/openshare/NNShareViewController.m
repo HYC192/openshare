@@ -7,7 +7,7 @@
 //
 
 #import "NNShareViewController.h"
-//#import "NNShareKit.h"
+#import "NNShareKit.h"
 #import "OpenShareHeader.h"
 
 @interface NNShareViewController ()
@@ -32,23 +32,23 @@
 
 //分享控件
 - (void)didShareAction{
-//    NSString *textToShare = @"分享的文字";
-//    UIImage *image = [UIImage imageNamed:@"share"];
-//    NSURL *urlToShare = [NSURL URLWithString:@"http://app.niannian99.com"];
-//    
-//    NNShareMessageObject *obj = [[NNShareMessageObject alloc]
-//                                 initWithTitle:textToShare
-//                                 image:image
-//                                 url:urlToShare
-//                                 activitys:nil
-//                                 shareContentType:NNShareContentTypeURL];
-//    
-//    NNShareContentController *shareController = [[NNShareContentController alloc] initWithObject:obj];
-//    shareController.completionWithItemsHandler = ^(NSString *activityType, BOOL completed, NSArray *returnedItems, NSError *activityError) {
-//        NSLog(@"type>==%@", activityType);
-//    };
-//    
-//    [self presentViewController:shareController animated:YES completion:nil];
+    NSString *textToShare = @"分享的文字";
+    UIImage *image = [UIImage imageNamed:@"share"];
+    NSURL *urlToShare = [NSURL URLWithString:@"http://app.niannian99.com"];
+    
+    NNShareMessageObject *obj = [[NNShareMessageObject alloc]
+                                 initWithTitle:textToShare
+                                 image:image
+                                 url:urlToShare
+                                 activitys:nil
+                                 shareContentType:NNShareContentTypeURL];
+    
+    NNShareContentController *shareController = [[NNShareContentController alloc] initWithObject:obj];
+    shareController.completionWithItemsHandler = ^(NSString *activityType, BOOL completed, NSArray *returnedItems, NSError *activityError) {
+        NSLog(@"type>==%@", activityType);
+    };
+    
+    [self presentViewController:shareController animated:YES completion:nil];
 
 }
 
