@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0492D1D61F8F70720009ADF7 /* NNBaseShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D1D51F8F70720009ADF7 /* NNBaseShareKit.m */; };
+		049EE8F71F8F6443004A076B /* NNShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049EE8F61F8F6443004A076B /* NNShareViewController.m */; };
 		B66BF3B31B0C137E0082F8D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B66BF3B21B0C137E0082F8D6 /* main.m */; };
 		B66BF3B61B0C137E0082F8D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B66BF3B51B0C137E0082F8D6 /* AppDelegate.m */; };
 		B66BF3B91B0C137E0082F8D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66BF3B81B0C137E0082F8D6 /* ViewController.m */; };
@@ -38,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0492D1D21F8F6FA40009ADF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0492D1D41F8F70720009ADF7 /* NNBaseShareKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NNBaseShareKit.h; path = ../openshare/NNBaseShareKit.h; sourceTree = "<group>"; };
+		0492D1D51F8F70720009ADF7 /* NNBaseShareKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NNBaseShareKit.m; path = ../openshare/NNBaseShareKit.m; sourceTree = "<group>"; };
+		049EE8F51F8F6443004A076B /* NNShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNShareViewController.h; sourceTree = "<group>"; };
+		049EE8F61F8F6443004A076B /* NNShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNShareViewController.m; sourceTree = "<group>"; };
 		B66BF3AD1B0C137E0082F8D6 /* openshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66BF3B11B0C137E0082F8D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66BF3B21B0C137E0082F8D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,12 +97,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0492D1D11F8F6FA40009ADF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0492D1D21F8F6FA40009ADF7 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B66BF3A41B0C137D0082F8D6 = {
 			isa = PBXGroup;
 			children = (
 				B66BF3AF1B0C137E0082F8D6 /* openshare */,
 				B66BF3C91B0C137E0082F8D6 /* openshareTests */,
 				B66BF3AE1B0C137E0082F8D6 /* Products */,
+				0492D1D11F8F6FA40009ADF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +133,8 @@
 				B66BF3B51B0C137E0082F8D6 /* AppDelegate.m */,
 				B66BF3B71B0C137E0082F8D6 /* ViewController.h */,
 				B66BF3B81B0C137E0082F8D6 /* ViewController.m */,
+				049EE8F51F8F6443004A076B /* NNShareViewController.h */,
+				049EE8F61F8F6443004A076B /* NNShareViewController.m */,
 				B66BF3F21B0C1AEB0082F8D6 /* UIControl+Blocks.h */,
 				B66BF3F31B0C1AEB0082F8D6 /* UIControl+Blocks.m */,
 				B66BF3BD1B0C137E0082F8D6 /* Images.xcassets */,
@@ -180,6 +198,8 @@
 				B66BF3EA1B0C16290082F8D6 /* OpenShare.h */,
 				B66BF3EB1B0C16290082F8D6 /* OpenShare.m */,
 				B66BF3EC1B0C16290082F8D6 /* OpenShareHeader.h */,
+				0492D1D41F8F70720009ADF7 /* NNBaseShareKit.h */,
+				0492D1D51F8F70720009ADF7 /* NNBaseShareKit.m */,
 			);
 			name = OpenShare;
 			path = ../../OpenShare;
@@ -229,15 +249,16 @@
 		B66BF3A51B0C137D0082F8D6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "OpenShare http://openshare.gfzj.us/";
 				TargetAttributes = {
 					B66BF3AC1B0C137E0082F8D6 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = UXQ4US7LL6;
+						DevelopmentTeam = LEZB7733B3;
 					};
 					B66BF3C51B0C137E0082F8D6 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = LEZB7733B3;
 						TestTargetID = B66BF3AC1B0C137E0082F8D6;
 					};
 				};
@@ -290,6 +311,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049EE8F71F8F6443004A076B /* NNShareViewController.m in Sources */,
+				0492D1D61F8F70720009ADF7 /* NNBaseShareKit.m in Sources */,
 				B66BF3B91B0C137E0082F8D6 /* ViewController.m in Sources */,
 				B66BF3EE1B0C16290082F8D6 /* OpenShare+Renren.m in Sources */,
 				B66BF3B61B0C137E0082F8D6 /* AppDelegate.m in Sources */,
@@ -341,14 +364,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -388,14 +417,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -425,11 +460,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = UXQ4US7LL6;
+				DEVELOPMENT_TEAM = LEZB7733B3;
 				INFOPLIST_FILE = openshare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "us.gfzj.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = us.yc.openshare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -439,11 +474,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = UXQ4US7LL6;
+				DEVELOPMENT_TEAM = LEZB7733B3;
 				INFOPLIST_FILE = openshare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "us.gfzj.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = us.yc.openshare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -452,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LEZB7733B3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -472,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LEZB7733B3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

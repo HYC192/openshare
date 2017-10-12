@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "UIControl+Blocks.h"
 #import "OpenShareHeader.h"
+#import "NNShareViewController.h"
 
 #define FT_WEIBO_APPKEY         @"2645776991"
 #define FT_WEIBO_APPSECRET      @"785818577abc810dfac71fa7c59d1957"
@@ -111,7 +112,21 @@
         panel.hidden=NO;
     }];
     
+    
+    UIButton *testBtn = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame)-50, CGRectGetMaxY(self.view.frame)-80, 100, 30)];
+    [testBtn setTitle:@"分享控件" forState:UIControlStateNormal];
+    [testBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    testBtn.backgroundColor = [UIColor grayColor];
+    [testBtn addTarget:self action:@selector(didShareAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:testBtn];
 }
+
+//分享控件
+- (void)didShareAction{
+    NNShareViewController *shareVC = [[NNShareViewController alloc] init];
+    [self.navigationController pushViewController:shareVC animated:YES];
+}
+
 -(UIButton*)button:(NSString*)title WithCenter:(CGPoint)center{
     UIButton *btn=[UIButton buttonWithType:UIButtonTypeSystem];
     [btn setTitle:title forState:UIControlStateNormal];
