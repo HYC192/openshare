@@ -15,7 +15,7 @@
     static NSBundle *shareKitBundle = nil;
     if (shareKitBundle == nil) {
         // 这里不使用mainBundle是为了适配pod 1.x和0.x
-        shareKitBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[NNBaseShareKit class]] pathForResource:@"NNShareKit" ofType:@"bundle"]];
+        shareKitBundle = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[NNBaseShareKit class]] pathForResource:@"openshare" ofType:@"bundle"]];
     }
     return shareKitBundle;
 }
