@@ -11,7 +11,7 @@
 @implementation NNWechatSessionShare
 - (UIImage *)activityImage
 {
-    return [NSBundle nn_getImageWithName:@"icon_share_wechatsession@2x"];
+    return [UIImage imageNamed:@"icon_share_wechatsession@2x"];
 }
 
 - (NSString *)activityTitle

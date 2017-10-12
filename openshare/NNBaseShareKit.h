@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NSBundle+NNShareKit.h"
 
 @interface NNBaseShareKit : UIActivity
 /**

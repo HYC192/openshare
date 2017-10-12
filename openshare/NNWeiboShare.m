@@ -11,7 +11,7 @@
 @implementation NNWeiboShare
 - (UIImage *)activityImage
 {
-    return [NSBundle nn_getImageWithName:@"icon_share_weibo@2x"];
+    return [UIImage imageNamed:@"icon_share_weibo@2x"];
 }
 
 - (NSString *)activityTitle

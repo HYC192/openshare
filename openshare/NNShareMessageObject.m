@@ -61,16 +61,15 @@
     NSMutableArray *arr = [[NSMutableArray alloc] init];
     //添加留言室分享Action
     NNChatShare *chatShare = [[NNChatShare alloc] init];
-    __weak typeof(self) weakSelf = self;
     chatShare.performActivityBlock = ^{
-        [weakSelf shareChatAction];
+        [self shareChatAction];
     };
     [arr addObject:chatShare];
     
     //复制链接Action
     NNCopyLink *copyLink = [[NNCopyLink alloc] init];
     copyLink.performActivityBlock = ^{
-        [weakSelf copyAction];
+        [self copyAction];
     };
     [arr addObject:copyLink];
     
@@ -80,7 +79,7 @@
 //
 //    }];
     savePhoto.performActivityBlock = ^{
-        [weakSelf savePhotoAction];
+        [self savePhotoAction];
     };
     [arr addObject:savePhoto];
     
