@@ -15,7 +15,7 @@
 }
 
 - (UIImage *)activityImage {
-    return [NSBundle nn_getImageWithName:@"icon_share_copylink@2x"];
+    return [NSBundle nn_getImageWithName:@"icon_share_download"];
 }
 
 - (NSString *)activityTitle {

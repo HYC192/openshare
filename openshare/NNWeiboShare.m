@@ -11,11 +11,11 @@
 @implementation NNWeiboShare
 - (UIImage *)activityImage
 {
-    return [NSBundle nn_getImageWithName:@"icon_share_weibo@2x"];
+    return [NSBundle nn_getImageWithName:@"icon_share_weibo"];
 }
 
 - (NSString *)activityTitle
 {
-    return @"新浪微博";
+    return @"微博";
 }
 @end

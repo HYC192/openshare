@@ -11,11 +11,11 @@
 @implementation NNWechatSessionShare
 - (UIImage *)activityImage
 {
-    return [NSBundle nn_getImageWithName:@"icon_share_wechatsession@2x"];
+    return [NSBundle nn_getImageWithName:@"icon_share_wechat"];
 }
 
 - (NSString *)activityTitle
 {
-    return @"微信好友";
+    return @"微信";
 }
 @end

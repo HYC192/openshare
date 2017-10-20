@@ -9,16 +9,17 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, NNShareContentType) {
-    NNShareContentTypeText = 0, //分享文字
-    NNShareContentTypePhoto, //分享图片
-    NNShareContentTypeURL, //分享链接
-};
 @interface NNBaseMessages : NSObject
 /**
  标题
  */
 @property (strong, readonly, nonatomic) NSString *title;
+
+/**
+ 内容
+ */
+@property (strong, readonly, nonatomic) NSString *content;
+
 /**
  图标
  */
@@ -29,27 +30,24 @@ typedef NS_ENUM(NSInteger, NNShareContentType) {
  */
 @property (nonatomic, strong, readonly) NSURL *url;
 
-/**
- 分享类型
- */
-@property (nonatomic, assign, readonly) NNShareContentType type;
-
-@property (nonatomic, strong) NSArray<UIActivity *> *activitys;
+@property (nonatomic, strong) NSArray<UIActivity *> *otherActivitys;
 
 /**
  初始化图标数据
  
  @param title 名称标题
+ @param content 内容
  @param image 图标
  @param url 链接地址
+ @param showType 显示功能类型
+ @param otherActivitys 添加其他自定义类型
  @param type 分享类型
- @param activitys 自定义类型
  @return 创建成功
  */
 - (instancetype)initWithTitle:(NSString *)title
+                      content:(NSString *)content
                         image:(UIImage *)image
                           url:(NSURL *)url
-                    activitys:(NSArray<UIActivity *> *)activitys
-             shareContentType:(NNShareContentType)type;
+               otherActivitys:(NSArray<UIActivity *> *)otherActivitys;
 
 @end

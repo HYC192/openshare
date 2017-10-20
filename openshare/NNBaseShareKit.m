@@ -66,6 +66,7 @@
     if (self.performActivityBlock) {
         self.performActivityBlock();
     }
+    
     [self activityDidFinish:YES];
 }
 @end

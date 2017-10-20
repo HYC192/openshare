@@ -7,15 +7,14 @@
 //
 
 #import "NNShareViewController.h"
-#import "NNShareKit.h"
-#import "OpenShareHeader.h"
+#import "NNShareKitHandle.h"
 
-@interface NNShareViewController ()
+@interface NNShareViewController ()<NNShareKitDelegate>
 
 @end
 
 @implementation NNShareViewController
-
+#pragma mark - Lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -30,32 +29,43 @@
     [self.view addSubview:testBtn];
 }
 
-//分享控件
-- (void)didShareAction{
-    NSString *textToShare = @"分享的文字";
-    UIImage *image = [UIImage imageNamed:@"share"];
-    NSURL *urlToShare = [NSURL URLWithString:@"http://app.niannian99.com"];
-    
-    NNShareMessageObject *obj = [[NNShareMessageObject alloc]
-                                 initWithTitle:textToShare
-                                 image:image
-                                 url:urlToShare
-                                 activitys:nil
-                                 shareContentType:NNShareContentTypeURL];
-    
-    NNShareContentController *shareController = [[NNShareContentController alloc] initWithObject:obj];
-    shareController.completionWithItemsHandler = ^(NSString *activityType, BOOL completed, NSArray *returnedItems, NSError *activityError) {
-        NSLog(@"type>==%@", activityType);
-    };
-    
-    [self presentViewController:shareController animated:YES completion:nil];
-
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Action
+//分享控件
+- (void)didShareAction{
+    NSString *textToShare = @"分享的文字";
+    NSString *content = @"内容";
+    UIImage *image = [UIImage imageNamed:@"share"];
+    NSURL *urlToShare = [NSURL URLWithString:@"http://app.niannian99.com"];
+    
+    NNShareMessageObject *obj = [[NNShareMessageObject alloc] initWithTitle:textToShare
+                                                                    content:content
+                                                                      image:image
+                                                                        url:urlToShare
+                                                             otherActivitys:nil
+                                 ];
+
+    NNShareContentController *shareController = [[NNShareContentController alloc] initWithObject:obj
+                                                                                            type:NNShowShareTypeDefault
+
+                                                   delegate:self                            shareContentType:NNShareContentTypeURL];
+
+    [self presentViewController:shareController animated:YES completion:nil];
+
+}
+
+#pragma mark - NNShareKitDelegate
+- (void)nn_shareMessageAction:(NNShareActionType)actionType shareMessage:(OSMessage * _Nullable)message {
+    NNShareKitHandle *handle = [[NNShareKitHandle alloc] initWithHandleMessage:message type:actionType];
+    [handle showShareControl:^(OSMessage *message) {
+        
+    }];
+}
+
 
 /*
 #pragma mark - Navigation

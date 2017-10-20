@@ -8,6 +8,15 @@
 
 #import "NNBaseMessages.h"
 
+typedef NS_ENUM(NSInteger, NNShareContentType) {
+    ///分享文字
+    NNShareContentTypeText = 0,
+    ///分享图片
+    NNShareContentTypePhoto,
+    ///分享链接
+    NNShareContentTypeURL,
+};
+
 @interface NNShareMessageObject : NNBaseMessages
 /**
  获取自定义分享平台

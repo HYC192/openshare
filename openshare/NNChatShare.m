@@ -11,7 +11,7 @@
 @implementation NNChatShare
 - (UIImage *)activityImage
 {
-    return [NSBundle nn_getImageWithName:@"icon_share_wctimeline@2x"];
+    return [NSBundle nn_getImageWithName:@"icon_share_nnchat"];
 }
 
 - (NSString *)activityTitle

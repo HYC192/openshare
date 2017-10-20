@@ -11,7 +11,7 @@
 @implementation NNWechatTimelineShare
 - (UIImage *)activityImage
 {
-    return [NSBundle nn_getImageWithName:@"icon_share_wctimeline@2x"];
+    return [NSBundle nn_getImageWithName:@"icon_share_wechattimeline"];
 }
 
 - (NSString *)activityTitle

@@ -10,18 +10,18 @@
 
 @implementation NNBaseMessages
 @synthesize title = _title;
+@synthesize content = _content;
 @synthesize image = _image;
 @synthesize url = _url;
-@synthesize type = _type;
 
-- (instancetype)initWithTitle:(NSString *)title image:(UIImage *)image url:(NSURL *)url activitys:(NSArray<UIActivity *> *)activitys shareContentType:(NNShareContentType)type{
+- (instancetype)initWithTitle:(NSString *)title content:(NSString *)content image:(UIImage *)image url:(NSURL *)url otherActivitys:(NSArray<UIActivity *> *)otherActivitys{
     self = [super init];
     if (self) {
         _title = title;
+        _content = content;
         _image = image;
         _url = url;
-        _type = type;
-        _activitys = activitys;
+        _otherActivitys = otherActivitys;
     }
     return self;
 }

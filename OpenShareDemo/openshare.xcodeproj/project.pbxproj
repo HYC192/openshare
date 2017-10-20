@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0437276A1F999500001B4735 /* openshare.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 043727691F999500001B4735 /* openshare.bundle */; };
+		0437276D1F99D5F0001B4735 /* NNShareKitHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437276C1F99D5F0001B4735 /* NNShareKitHandle.m */; };
 		0492D2871F8F8E590009ADF7 /* NNWechatTimelineShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D26E1F8F8E540009ADF7 /* NNWechatTimelineShare.m */; };
 		0492D2881F8F8E590009ADF7 /* NSString+NNValid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2711F8F8E550009ADF7 /* NSString+NNValid.m */; };
 		0492D2891F8F8E590009ADF7 /* NNSavePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2761F8F8E550009ADF7 /* NNSavePhoto.m */; };
@@ -19,8 +21,13 @@
 		0492D2911F8F8E590009ADF7 /* NNWeiboShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2841F8F8E580009ADF7 /* NNWeiboShare.m */; };
 		0492D2921F8F8E590009ADF7 /* NNBaseMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2851F8F8E580009ADF7 /* NNBaseMessages.m */; };
 		0492D2B71F8FABB70009ADF7 /* NSBundle+NNShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2B61F8FABB70009ADF7 /* NSBundle+NNShareKit.m */; };
-		0492D2B91F8FAD410009ADF7 /* openshare.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0492D2B81F8FAD410009ADF7 /* openshare.bundle */; };
 		049EE8F71F8F6443004A076B /* NNShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049EE8F61F8F6443004A076B /* NNShareViewController.m */; };
+		04D650B21F904B27005F7830 /* NNTencentQQShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D650B11F904B27005F7830 /* NNTencentQQShare.m */; };
+		04D650B51F904B6F005F7830 /* NNTencentSpaceShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D650B41F904B6F005F7830 /* NNTencentSpaceShare.m */; };
+		04D650CE1F908E44005F7830 /* NNCollectShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D650CD1F908E44005F7830 /* NNCollectShare.m */; };
+		04D650D11F908EEE005F7830 /* NNReportShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D650D01F908EEE005F7830 /* NNReportShare.m */; };
+		04D650D41F908F19005F7830 /* NNRefreshShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D650D31F908F19005F7830 /* NNRefreshShare.m */; };
+		04D650D71F908F44005F7830 /* NNDeleteShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D650D61F908F44005F7830 /* NNDeleteShare.m */; };
 		B66BF3B31B0C137E0082F8D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B66BF3B21B0C137E0082F8D6 /* main.m */; };
 		B66BF3B61B0C137E0082F8D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B66BF3B51B0C137E0082F8D6 /* AppDelegate.m */; };
 		B66BF3B91B0C137E0082F8D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66BF3B81B0C137E0082F8D6 /* ViewController.m */; };
@@ -52,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043727691F999500001B4735 /* openshare.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = openshare.bundle; sourceTree = "<group>"; };
+		0437276B1F99D5F0001B4735 /* NNShareKitHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNShareKitHandle.h; sourceTree = "<group>"; };
+		0437276C1F99D5F0001B4735 /* NNShareKitHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNShareKitHandle.m; sourceTree = "<group>"; };
 		0492D26D1F8F8E540009ADF7 /* NNBaseMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNBaseMessages.h; path = ../openshare/NNBaseMessages.h; sourceTree = "<group>"; };
 		0492D26E1F8F8E540009ADF7 /* NNWechatTimelineShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNWechatTimelineShare.m; path = ../openshare/NNWechatTimelineShare.m; sourceTree = "<group>"; };
 		0492D26F1F8F8E540009ADF7 /* NNWechatSessionShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNWechatSessionShare.h; path = ../openshare/NNWechatSessionShare.h; sourceTree = "<group>"; };
@@ -77,9 +87,20 @@
 		0492D2851F8F8E580009ADF7 /* NNBaseMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNBaseMessages.m; path = ../openshare/NNBaseMessages.m; sourceTree = "<group>"; };
 		0492D2B51F8FABB60009ADF7 /* NSBundle+NNShareKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+NNShareKit.h"; sourceTree = "<group>"; };
 		0492D2B61F8FABB70009ADF7 /* NSBundle+NNShareKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+NNShareKit.m"; sourceTree = "<group>"; };
-		0492D2B81F8FAD410009ADF7 /* openshare.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = openshare.bundle; sourceTree = "<group>"; };
 		049EE8F51F8F6443004A076B /* NNShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNShareViewController.h; sourceTree = "<group>"; };
 		049EE8F61F8F6443004A076B /* NNShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNShareViewController.m; sourceTree = "<group>"; };
+		04D650B01F904B27005F7830 /* NNTencentQQShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NNTencentQQShare.h; path = ../openshare/NNTencentQQShare.h; sourceTree = "<group>"; };
+		04D650B11F904B27005F7830 /* NNTencentQQShare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NNTencentQQShare.m; path = ../openshare/NNTencentQQShare.m; sourceTree = "<group>"; };
+		04D650B31F904B6F005F7830 /* NNTencentSpaceShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNTencentSpaceShare.h; sourceTree = "<group>"; };
+		04D650B41F904B6F005F7830 /* NNTencentSpaceShare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNTencentSpaceShare.m; sourceTree = "<group>"; };
+		04D650CC1F908E44005F7830 /* NNCollectShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNCollectShare.h; sourceTree = "<group>"; };
+		04D650CD1F908E44005F7830 /* NNCollectShare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNCollectShare.m; sourceTree = "<group>"; };
+		04D650CF1F908EEE005F7830 /* NNReportShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNReportShare.h; sourceTree = "<group>"; };
+		04D650D01F908EEE005F7830 /* NNReportShare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNReportShare.m; sourceTree = "<group>"; };
+		04D650D21F908F19005F7830 /* NNRefreshShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNRefreshShare.h; sourceTree = "<group>"; };
+		04D650D31F908F19005F7830 /* NNRefreshShare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNRefreshShare.m; sourceTree = "<group>"; };
+		04D650D51F908F44005F7830 /* NNDeleteShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNDeleteShare.h; sourceTree = "<group>"; };
+		04D650D61F908F44005F7830 /* NNDeleteShare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNDeleteShare.m; sourceTree = "<group>"; };
 		B66BF3AD1B0C137E0082F8D6 /* openshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66BF3B11B0C137E0082F8D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66BF3B21B0C137E0082F8D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -135,7 +156,7 @@
 		0492D29C1F8F91BF0009ADF7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0492D2B81F8FAD410009ADF7 /* openshare.bundle */,
+				043727691F999500001B4735 /* openshare.bundle */,
 			);
 			name = Resources;
 			path = ../openshare/Resources;
@@ -170,6 +191,8 @@
 				B66BF3B81B0C137E0082F8D6 /* ViewController.m */,
 				049EE8F51F8F6443004A076B /* NNShareViewController.h */,
 				049EE8F61F8F6443004A076B /* NNShareViewController.m */,
+				0437276B1F99D5F0001B4735 /* NNShareKitHandle.h */,
+				0437276C1F99D5F0001B4735 /* NNShareKitHandle.m */,
 				B66BF3F21B0C1AEB0082F8D6 /* UIControl+Blocks.h */,
 				B66BF3F31B0C1AEB0082F8D6 /* UIControl+Blocks.m */,
 				B66BF3BD1B0C137E0082F8D6 /* Images.xcassets */,
@@ -231,6 +254,14 @@
 				0492D27D1F8F8E570009ADF7 /* NNCopyLink.m */,
 				0492D27E1F8F8E570009ADF7 /* NNSavePhoto.h */,
 				0492D2761F8F8E550009ADF7 /* NNSavePhoto.m */,
+				04D650CC1F908E44005F7830 /* NNCollectShare.h */,
+				04D650CD1F908E44005F7830 /* NNCollectShare.m */,
+				04D650CF1F908EEE005F7830 /* NNReportShare.h */,
+				04D650D01F908EEE005F7830 /* NNReportShare.m */,
+				04D650D21F908F19005F7830 /* NNRefreshShare.h */,
+				04D650D31F908F19005F7830 /* NNRefreshShare.m */,
+				04D650D51F908F44005F7830 /* NNDeleteShare.h */,
+				04D650D61F908F44005F7830 /* NNDeleteShare.m */,
 				0492D2721F8F8E550009ADF7 /* NNShareContentController.h */,
 				0492D27B1F8F8E560009ADF7 /* NNShareContentController.m */,
 				0492D2701F8F8E550009ADF7 /* NNShareKit.h */,
@@ -242,6 +273,10 @@
 				0492D2771F8F8E560009ADF7 /* NNWechatSessionShare.m */,
 				0492D27F1F8F8E570009ADF7 /* NNWechatTimelineShare.h */,
 				0492D26E1F8F8E540009ADF7 /* NNWechatTimelineShare.m */,
+				04D650B01F904B27005F7830 /* NNTencentQQShare.h */,
+				04D650B11F904B27005F7830 /* NNTencentQQShare.m */,
+				04D650B31F904B6F005F7830 /* NNTencentSpaceShare.h */,
+				04D650B41F904B6F005F7830 /* NNTencentSpaceShare.m */,
 				0492D2801F8F8E570009ADF7 /* NNWeiboShare.h */,
 				0492D2841F8F8E580009ADF7 /* NNWeiboShare.m */,
 				0492D27A1F8F8E560009ADF7 /* NSString+NNValid.h */,
@@ -351,7 +386,7 @@
 				B66BF3DC1B0C14480082F8D6 /* logo.gif in Resources */,
 				B66BF3C11B0C137E0082F8D6 /* LaunchScreen.xib in Resources */,
 				B66BF3BE1B0C137E0082F8D6 /* Images.xcassets in Resources */,
-				0492D2B91F8FAD410009ADF7 /* openshare.bundle in Resources */,
+				0437276A1F999500001B4735 /* openshare.bundle in Resources */,
 				B66BF3F81B0C23670082F8D6 /* Default@2x.png in Resources */,
 				B66BF3DE1B0C14480082F8D6 /* test.pdf in Resources */,
 			);
@@ -372,20 +407,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				0492D2881F8F8E590009ADF7 /* NSString+NNValid.m in Sources */,
+				04D650D41F908F19005F7830 /* NNRefreshShare.m in Sources */,
 				0492D2B71F8FABB70009ADF7 /* NSBundle+NNShareKit.m in Sources */,
+				04D650D11F908EEE005F7830 /* NNReportShare.m in Sources */,
+				04D650CE1F908E44005F7830 /* NNCollectShare.m in Sources */,
 				0492D28D1F8F8E590009ADF7 /* NNBaseShareKit.m in Sources */,
 				0492D2911F8F8E590009ADF7 /* NNWeiboShare.m in Sources */,
 				049EE8F71F8F6443004A076B /* NNShareViewController.m in Sources */,
 				0492D28F1F8F8E590009ADF7 /* NNChatShare.m in Sources */,
 				B66BF3B91B0C137E0082F8D6 /* ViewController.m in Sources */,
 				B66BF3EE1B0C16290082F8D6 /* OpenShare+Renren.m in Sources */,
+				04D650B51F904B6F005F7830 /* NNTencentSpaceShare.m in Sources */,
 				B66BF3B61B0C137E0082F8D6 /* AppDelegate.m in Sources */,
 				0492D28C1F8F8E590009ADF7 /* NNShareContentController.m in Sources */,
 				0492D2891F8F8E590009ADF7 /* NNSavePhoto.m in Sources */,
 				0492D2871F8F8E590009ADF7 /* NNWechatTimelineShare.m in Sources */,
 				B66BF3F41B0C1AEB0082F8D6 /* UIControl+Blocks.m in Sources */,
 				0492D28A1F8F8E590009ADF7 /* NNWechatSessionShare.m in Sources */,
+				0437276D1F99D5F0001B4735 /* NNShareKitHandle.m in Sources */,
 				B66BF3F11B0C16290082F8D6 /* OpenShare.m in Sources */,
+				04D650B21F904B27005F7830 /* NNTencentQQShare.m in Sources */,
+				04D650D71F908F44005F7830 /* NNDeleteShare.m in Sources */,
 				0492D2921F8F8E590009ADF7 /* NNBaseMessages.m in Sources */,
 				0492D2901F8F8E590009ADF7 /* NNShareMessageObject.m in Sources */,
 				B66BF3B31B0C137E0082F8D6 /* main.m in Sources */,

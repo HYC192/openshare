@@ -7,6 +7,7 @@
 //
 
 #import "NNBaseShareKit.h"
+
 ///自定义留言室分享
 @interface NNChatShare : NNBaseShareKit
 
