@@ -37,8 +37,6 @@
 @end
 
 @implementation NNShareContentController
-@synthesize type = _type;
-@synthesize shareType = _shareType;
 
 - (instancetype)initWithObject:(NNShareMessageObject *)shareMessageObj
                           type:(NNShowShareType)type delegate:(nullable id<NNShareKitDelegate>)delegate shareContentType:(NNShareContentType)shareType{
@@ -84,18 +82,15 @@
 - (NSArray *)getActivityArray:(NSArray *)others type:(NNShowShareType)type{
     NSMutableArray *arr = [[NSMutableArray alloc] init];
     //是否安装微信
-    @nn_weakify(self);
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"wechat://"]]) {
         NNWechatSessionShare *wechat = [[NNWechatSessionShare alloc] init];
         wechat.performActivityBlock = ^{
-            @nn_strongify(self);
             [self clickedShareAction:NNShareActionTypeWeChatSession];
         };
         [arr addObject:wechat];
         
         NNWechatTimelineShare *wechatTime = [[NNWechatTimelineShare alloc] init];
         wechatTime.performActivityBlock = ^{
-            @nn_strongify(self);
             [self clickedShareAction:NNShareActionTypeWeChatTimeline];
         };
         [arr addObject:wechatTime];
@@ -105,14 +100,12 @@
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"mqq://"]]) {
         NNTencentQQShare *tencentQQ = [[NNTencentQQShare alloc] init];
         tencentQQ.performActivityBlock = ^{
-            @nn_strongify(self);
             [self clickedShareAction:NNShareActionTypeTencentQQ];
         };
         [arr addObject:tencentQQ];
         
         NNTencentSpaceShare *tencentSpace = [[NNTencentSpaceShare alloc] init];
         tencentSpace.performActivityBlock = ^{
-            @nn_strongify(self);
             [self clickedShareAction:NNShareActionTypeTencentQzone];
         };
         [arr addObject:tencentSpace];
@@ -123,7 +116,6 @@
         NNWeiboShare *sinaWibo = [[NNWeiboShare alloc] init];
         [arr addObject:sinaWibo];
         sinaWibo.performActivityBlock = ^{
-            @nn_strongify(self);
             [self clickedShareAction:NNShareActionTypeSinaWeibo];
         };
     }
@@ -138,7 +130,6 @@
     //保存到手机Action
     NNSavePhoto *savePhoto = [[NNSavePhoto alloc] init];
     savePhoto.performActivityBlock = ^{
-        @nn_strongify(self);
         [self clickedShareAction:NNShareActionTypeSavePhoto];
     };
     [arr addObject:savePhoto];
@@ -146,7 +137,6 @@
     //复制链接Action
     NNCopyLink *copyLink = [[NNCopyLink alloc] init];
     copyLink.performActivityBlock = ^{
-        @nn_strongify(self);
         [self clickedShareAction:NNShareActionTypeCopyLine];
     };
     [arr addObject:copyLink];
@@ -154,7 +144,6 @@
     //收藏
     NNCollectShare *collect = [[NNCollectShare alloc] init];
     collect.performActivityBlock = ^{
-        @nn_strongify(self);
         [self clickedShareAction:NNShareActionTypeCollect];
     };
     [arr addObject:collect];
@@ -162,7 +151,6 @@
     //举报
     NNReportShare *report = [[NNReportShare alloc] init];
     report.performActivityBlock = ^{
-        @nn_strongify(self);
         [self clickedShareAction:NNShareActionTypeReport];
     };
     [arr addObject:report];
@@ -170,7 +158,6 @@
     //刷新
     NNRefreshShare *refresh = [[NNRefreshShare alloc] init];
     refresh.performActivityBlock = ^{
-        @nn_strongify(self);
         [self clickedShareAction:NNShareActionTypeRefresh];
     };
     [arr addObject:refresh];
@@ -199,7 +186,6 @@
             //删除
             NNDeleteShare *delete = [[NNDeleteShare alloc] init];
             delete.performActivityBlock = ^{
-                @nn_strongify(self);
                 [self clickedShareAction:NNShareActionTypeDelete];
             };
             [arr addObject:delete];
@@ -214,7 +200,6 @@
             
             NNCollectShare *replace = [[NNCollectShare alloc] initWithTitle:@"取消收藏" image:[NSBundle nn_getImageWithName:@"icon_share_cancelcollect"] url:nil];
             replace.performActivityBlock = ^{
-                @nn_strongify(self);
                 [self clickedShareAction:NNShareActionTypeCollect];
             };
             [arr insertObject:replace atIndex:index];
