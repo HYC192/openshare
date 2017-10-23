@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "OpenShare"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "share to social network without official SDKs"
 
   s.description  = <<-DESC
@@ -105,7 +105,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "Resources/*.png"
+   s.resource  = "openshare/*.bundle"
   # s.resources = "openshare/*.{png,bundle}"
   #s.resource_bundles = {
   #  'openshare' => [ 'openshare/*.{png,bundle}']
