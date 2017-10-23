@@ -77,7 +77,7 @@ typedef NS_ENUM(NSInteger, NNShareActionType) {
               shareContentType:(NNShareContentType)shareType;
 ;
 
-@property (nullable, nonatomic, weak) id <NNShareKitDelegate> delegate;
+@property (nullable, nonatomic, assign) id <NNShareKitDelegate> delegate;
 
 /**
  显示类型
