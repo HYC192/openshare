@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0437276D1F99D5F0001B4735 /* NNShareKitHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437276C1F99D5F0001B4735 /* NNShareKitHandle.m */; };
-		0437278B1F9DE64D001B4735 /* openshare.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0437278A1F9DE64D001B4735 /* openshare.bundle */; };
 		0492D2871F8F8E590009ADF7 /* NNWechatTimelineShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D26E1F8F8E540009ADF7 /* NNWechatTimelineShare.m */; };
 		0492D2881F8F8E590009ADF7 /* NSString+NNValid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2711F8F8E550009ADF7 /* NSString+NNValid.m */; };
 		0492D2891F8F8E590009ADF7 /* NNSavePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0492D2761F8F8E550009ADF7 /* NNSavePhoto.m */; };
@@ -61,7 +60,6 @@
 /* Begin PBXFileReference section */
 		0437276B1F99D5F0001B4735 /* NNShareKitHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNShareKitHandle.h; sourceTree = "<group>"; };
 		0437276C1F99D5F0001B4735 /* NNShareKitHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNShareKitHandle.m; sourceTree = "<group>"; };
-		0437278A1F9DE64D001B4735 /* openshare.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = openshare.bundle; sourceTree = "<group>"; };
 		0492D26D1F8F8E540009ADF7 /* NNBaseMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNBaseMessages.h; path = ../openshare/NNBaseMessages.h; sourceTree = "<group>"; };
 		0492D26E1F8F8E540009ADF7 /* NNWechatTimelineShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNWechatTimelineShare.m; path = ../openshare/NNWechatTimelineShare.m; sourceTree = "<group>"; };
 		0492D26F1F8F8E540009ADF7 /* NNWechatSessionShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNWechatSessionShare.h; path = ../openshare/NNWechatSessionShare.h; sourceTree = "<group>"; };
@@ -284,7 +282,6 @@
 				B66BF3EA1B0C16290082F8D6 /* OpenShare.h */,
 				B66BF3EB1B0C16290082F8D6 /* OpenShare.m */,
 				B66BF3EC1B0C16290082F8D6 /* OpenShareHeader.h */,
-				0437278A1F9DE64D001B4735 /* openshare.bundle */,
 			);
 			name = OpenShare;
 			path = ../../OpenShare;
@@ -377,7 +374,6 @@
 				B66BF3DC1B0C14480082F8D6 /* logo.gif in Resources */,
 				B66BF3C11B0C137E0082F8D6 /* LaunchScreen.xib in Resources */,
 				B66BF3BE1B0C137E0082F8D6 /* Images.xcassets in Resources */,
-				0437278B1F9DE64D001B4735 /* openshare.bundle in Resources */,
 				B66BF3F81B0C23670082F8D6 /* Default@2x.png in Resources */,
 				B66BF3DE1B0C14480082F8D6 /* test.pdf in Resources */,
 			);
