@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "OpenShare"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "share to social network without official SDKs"
 
   s.description  = <<-DESC
