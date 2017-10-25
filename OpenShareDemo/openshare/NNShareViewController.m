@@ -54,6 +54,8 @@
 
                                                    delegate:self                            shareContentType:NNShareContentTypeURL];
 
+    
+    
     [self presentViewController:shareController animated:YES completion:nil];
 
 }

@@ -20,6 +20,7 @@
 #import "NNSavePhoto.h"
 #import "NNCopyLink.h"
 #import "NNCollectShare.h"
+#import "NNCancelCollect.h"
 #import "NNReportShare.h"
 #import "NNRefreshShare.h"
 #import "NNDeleteShare.h"
@@ -132,34 +133,44 @@
     savePhoto.performActivityBlock = ^{
         [self clickedShareAction:NNShareActionTypeSavePhoto];
     };
-    [arr addObject:savePhoto];
     
     //复制链接Action
     NNCopyLink *copyLink = [[NNCopyLink alloc] init];
     copyLink.performActivityBlock = ^{
         [self clickedShareAction:NNShareActionTypeCopyLine];
     };
-    [arr addObject:copyLink];
     
     //收藏
     NNCollectShare *collect = [[NNCollectShare alloc] init];
     collect.performActivityBlock = ^{
         [self clickedShareAction:NNShareActionTypeCollect];
     };
-    [arr addObject:collect];
+    
+    NNCancelCollect *cancelCollect = [[NNCancelCollect alloc] init];
+    cancelCollect.performActivityBlock = ^{
+        [self clickedShareAction:NNShareActionTypeCollect];
+    };
     
     //举报
     NNReportShare *report = [[NNReportShare alloc] init];
     report.performActivityBlock = ^{
         [self clickedShareAction:NNShareActionTypeReport];
     };
-    [arr addObject:report];
     
     //刷新
     NNRefreshShare *refresh = [[NNRefreshShare alloc] init];
     refresh.performActivityBlock = ^{
         [self clickedShareAction:NNShareActionTypeRefresh];
     };
+    
+    //删除
+    NNDeleteShare *delete = [[NNDeleteShare alloc] init];
+    delete.performActivityBlock = ^{
+        [self clickedShareAction:NNShareActionTypeDelete];
+    };
+    
+    [arr addObject:copyLink];
+    [arr addObject:report];
     [arr addObject:refresh];
     
     switch (type) {
@@ -169,9 +180,30 @@
         }
             break;
             
-        case NNShowShareTypeWithoutCollect:
+        case NNShowShareTypeWithCollect:
         {
-            [arr removeObject:collect];
+            [arr removeObject:copyLink];
+            [arr removeObject:report];
+            [arr removeObject:refresh];
+            
+            [arr addObject:collect];
+            [arr addObject:copyLink];
+            [arr addObject:report];
+            [arr addObject:refresh];
+        }
+            break;
+            
+            //取消收藏
+        case NNShowShareTypeCancelCollect:
+        {
+            [arr removeObject:copyLink];
+            [arr removeObject:report];
+            [arr removeObject:refresh];
+            
+            [arr addObject:cancelCollect];
+            [arr addObject:copyLink];
+            [arr addObject:report];
+            [arr addObject:refresh];
         }
             break;
             
@@ -181,42 +213,43 @@
         }
             break;
             
-        case NNShowShareTypeWithDelete:
+        case (NNShowShareTypeWithCollect | NNShowShareTypeWithDelete):
         {
-            //删除
-            NNDeleteShare *delete = [[NNDeleteShare alloc] init];
-            delete.performActivityBlock = ^{
-                [self clickedShareAction:NNShareActionTypeDelete];
-            };
+            
+            [arr removeObject:copyLink];
+            [arr removeObject:report];
+            [arr removeObject:refresh];
+            
+            [arr addObject:collect];
+            [arr addObject:copyLink];
+            [arr addObject:refresh];
             [arr addObject:delete];
         }
             break;
             
-            //取消收藏
-        case NNShowShareTypeCancelCollect:
+        case(NNShowShareTypeCancelCollect | NNShowShareTypeWithDelete):
         {
-            NSInteger index = [arr indexOfObject:collect];
-            [arr removeObject:collect];
+            [arr removeObject:copyLink];
+            [arr removeObject:report];
+            [arr removeObject:refresh];
             
-            NNCollectShare *replace = [[NNCollectShare alloc] initWithTitle:@"取消收藏" image:[NSBundle nn_getImageWithName:@"icon_share_cancelcollect"] url:nil];
-            replace.performActivityBlock = ^{
-                [self clickedShareAction:NNShareActionTypeCollect];
-            };
-            [arr insertObject:replace atIndex:index];
+            [arr addObject:cancelCollect];
+            [arr addObject:copyLink];
+            [arr addObject:refresh];
+            [arr addObject:delete];
         }
             break;
             
-        case(NNShowShareTypeWithoutCollect | NNShowShareTypeWithoutChatRoom):
+        case NNShowShareTypeWithoutReport:
         {
-            [arr removeObject:chatShare];
-            [arr removeObject:collect];
+            [arr removeObject:report];
         }
             break;
             
         case NNShowShareTypeDefault:
         default:
         {
-            [arr removeObject:collect];
+            
         }
             break;
     }
@@ -369,6 +402,10 @@
             }
         }
             break;
+    }
+    
+    if (![NSString nn_vaildEmptyStringWithoutSpace:obj.extInfo]) {
+        _shareMessage.extInfo = obj.extInfo;
     }
 }
 

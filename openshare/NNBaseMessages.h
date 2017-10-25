@@ -26,6 +26,12 @@
 @property (strong, readonly, nonatomic) UIImage *image;
 
 /**
+ 自带信息
+ */
+@property (nonatomic, strong, readonly) NSString *extInfo;
+
+
+/**
  链接地址
  */
 @property (nonatomic, strong, readonly) NSURL *url;
@@ -41,6 +47,7 @@
  @param url 链接地址
  @param showType 显示功能类型
  @param otherActivitys 添加其他自定义类型
+ @param extInfo   app自带信息
  @param type 分享类型
  @return 创建成功
  */
@@ -48,6 +55,7 @@
                       content:(NSString *)content
                         image:(UIImage *)image
                           url:(NSURL *)url
+                      extInfo:(NSString *)extInfo
                otherActivitys:(NSArray<UIActivity *> *)otherActivitys;
 
 @end

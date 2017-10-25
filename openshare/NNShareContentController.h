@@ -16,13 +16,15 @@ typedef NS_ENUM(NSInteger, NNShowShareType) {
     ///无留言室界面类型
     NNShowShareTypeWithoutChatRoom = 1 << 0,
     ///无收藏界面类型
-    NNShowShareTypeWithoutCollect  = 1 << 1,
+    NNShowShareTypeWithCollect  = 1 << 1,
     ///无刷新界面类型
     NNShowShareTypeWithoutRefresh  = 1 << 2,
     ///取消收藏界面类型
     NNShowShareTypeCancelCollect = 1 << 3,
     ///有删除界面类型
     NNShowShareTypeWithDelete = 1 << 4,
+    ///无举报
+    NNShowShareTypeWithoutReport = 1 << 5,
 };
 
 //点击分享类型
@@ -53,7 +55,9 @@ typedef NS_ENUM(NSInteger, NNShareActionType) {
     ///点击刷新
     NNShareActionTypeRefresh,
     ///点击删除
-    NNShareActionTypeDelete
+    NNShareActionTypeDelete,
+    ///取消收藏
+    NNShareActionTypeCancelCollect
 };
 
 @class NNShareMessageObject;
@@ -65,7 +69,7 @@ typedef NS_ENUM(NSInteger, NNShareActionType) {
 @interface NNShareContentController : UIActivityViewController
 /**
  初始化
-
+ 
  @param shareMessageObj 消息体
  @param type 分享类型，有无特定界面
  @param delegate 代理方法
@@ -95,3 +99,5 @@ typedef NS_ENUM(NSInteger, NNShareActionType) {
 @property (nonatomic, getter=isShowAirDrop) BOOL showAirDrop;
 @end
 NS_ASSUME_NONNULL_END
+
+

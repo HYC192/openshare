@@ -13,14 +13,16 @@
 @synthesize content = _content;
 @synthesize image = _image;
 @synthesize url = _url;
+@synthesize extInfo = _extInfo;
 
-- (instancetype)initWithTitle:(NSString *)title content:(NSString *)content image:(UIImage *)image url:(NSURL *)url otherActivitys:(NSArray<UIActivity *> *)otherActivitys{
+- (instancetype)initWithTitle:(NSString *)title content:(NSString *)content image:(UIImage *)image url:(NSURL *)url extInfo:(NSString *)extInfo otherActivitys:(NSArray<UIActivity *> *)otherActivitys{
     self = [super init];
     if (self) {
         _title = title;
         _content = content;
         _image = image;
         _url = url;
+        _extInfo = extInfo;
         _otherActivitys = otherActivitys;
     }
     return self;
