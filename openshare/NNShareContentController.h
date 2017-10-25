@@ -25,6 +25,8 @@ typedef NS_ENUM(NSInteger, NNShowShareType) {
     NNShowShareTypeWithDelete = 1 << 4,
     ///无举报
     NNShowShareTypeWithoutReport = 1 << 5,
+    //保存到手机相册
+    NNShowShareTypeWithSavephoto = 1 << 6,
 };
 
 //点击分享类型

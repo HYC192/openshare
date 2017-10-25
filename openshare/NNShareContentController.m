@@ -146,9 +146,10 @@
         [self clickedShareAction:NNShareActionTypeCollect];
     };
     
+    //取消收藏
     NNCancelCollect *cancelCollect = [[NNCancelCollect alloc] init];
     cancelCollect.performActivityBlock = ^{
-        [self clickedShareAction:NNShareActionTypeCollect];
+        [self clickedShareAction:NNShareActionTypeCancelCollect];
     };
     
     //举报
@@ -246,6 +247,15 @@
         }
             break;
             
+        case NNShowShareTypeWithSavephoto:{
+            [arr removeObject:copyLink];
+            [arr removeObject:report];
+            [arr removeObject:refresh];
+            
+            [arr addObject:savePhoto];
+        }
+            break;
+            
         case NNShowShareTypeDefault:
         default:
         {
@@ -273,21 +283,21 @@
 - (void)_initItemsLayout{
     NSArray *arr = nil;
     if (@available(iOS 11.0, *)) {
-            arr = @[UIActivityTypePrint,
-                    UIActivityTypeCopyToPasteboard,
-                    UIActivityTypeAssignToContact,
-                    UIActivityTypeMessage,
-                    UIActivityTypeSaveToCameraRoll,
-                    UIActivityTypePostToTwitter,
-                    UIActivityTypeMail,
-                    UIActivityTypePostToVimeo,
-                    UIActivityTypePostToFlickr,
-                    UIActivityTypePostToFacebook,
-                    UIActivityTypeAddToReadingList,
-                    UIActivityTypePostToWeibo,
-                    UIActivityTypePostToTencentWeibo,
-                    UIActivityTypeMarkupAsPDF,
-                    ];
+        arr = @[UIActivityTypePrint,
+                UIActivityTypeCopyToPasteboard,
+                UIActivityTypeAssignToContact,
+                UIActivityTypeMessage,
+                UIActivityTypeSaveToCameraRoll,
+                UIActivityTypePostToTwitter,
+                UIActivityTypeMail,
+                UIActivityTypePostToVimeo,
+                UIActivityTypePostToFlickr,
+                UIActivityTypePostToFacebook,
+                UIActivityTypeAddToReadingList,
+                UIActivityTypePostToWeibo,
+                UIActivityTypePostToTencentWeibo,
+                UIActivityTypeMarkupAsPDF,
+                ];
     }
     else if(YC_IS_IOS9_OR_GREATER)
     {
@@ -341,6 +351,10 @@
 //获取分享数据
 - (void)_initShareContent:(NNShareMessageObject *)obj{
     _shareMessage = [[OSMessage alloc] init];
+    _shareMessage.title = @"念享";
+    if (![NSString nn_vaildEmptyStringWithoutSpace:obj.title]) {
+        _shareMessage.title = obj.title;
+    }
     switch (self.shareType) {
             //分享图片
         case NNShareContentTypePhoto:
@@ -354,14 +368,9 @@
             }
         }
             break;
-           //分享链接
+            //分享链接
         case NNShareContentTypeURL:
         {
-            _shareMessage.title = @"念享";
-            if (![NSString nn_vaildEmptyStringWithoutSpace:obj.title]) {
-                _shareMessage.title = obj.title;
-            }
-            
             NSString *url = obj.url.absoluteString;
             
             if (![NSString nn_vaildEmptyStringWithoutSpace:url]) {
@@ -392,11 +401,6 @@
         case NNShareContentTypeText:
         default:
         {
-            _shareMessage.title = @"念享";
-            if (![NSString nn_vaildEmptyStringWithoutSpace:obj.title]) {
-                _shareMessage.title = obj.title;
-            }
-            
             if (![NSString nn_vaildEmptyStringWithoutSpace:obj.content]) {
                 _shareMessage.desc = obj.content;
             }
@@ -410,13 +414,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
