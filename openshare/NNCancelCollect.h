@@ -5,7 +5,7 @@
 //  Created by mac on 2017/10/25.
 //
 
-#import <OpenShare/OpenShare.h>
+#import "NNBaseShareKit.h"
 
 @interface NNCancelCollect : NNBaseShareKit
 

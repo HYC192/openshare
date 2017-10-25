@@ -46,8 +46,7 @@
                                                                     content:content
                                                                       image:image
                                                                         url:urlToShare
-                                                             otherActivitys:nil
-                                 ];
+                                    extInfo:nil otherActivitys:nil];
 
     NNShareContentController *shareController = [[NNShareContentController alloc] initWithObject:obj
                                                                                             type:NNShowShareTypeDefault
